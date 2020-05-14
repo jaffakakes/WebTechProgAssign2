@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="javascript Theatre tickets">
+   <title>Theatre tickets</title>
+</head>
+<body>
+    <h1>Theatre tickets</h1>
+    <form id="theatreTickets">
+        <fieldset>
+            <legend>Tickets</legend>
+            <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        
+        <p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </p>
+        <p>
+            <label for="movies">Movies:</label>
+            <select id="movies" name="movies">
+               <option value="phantomOfTheOpera">Phantom of the Opera £79</option>
+               <option value="hamilton">Hamilton £85</option>
+               <option value="lionKing">Lion King £67</option>
+               <option value="missSaigon">Miss Saigon £83</option>
+            </select>
+        </p>
+        <p>
+            <label for="seats">Numbers of seats required:</label>
+            <input type="number" id="seats" name="seats"
+                   min="0" required>
+        </p>
+        <p>
+            <input type= "radio" id="eticket" name="contact" value="E-ticket: Free"
+                checked>
+            <label for="eticket">E-ticket: Free</label>
+        </p>
+        <p>
+            <input type= "radio" id="collectFromBoxOffice" name="contact" value="Collect From Box Office: £1.99">
+            <label for="collectFromBoxOffice">Collect From Box Office: £1.99</label>
+        </p>
+        <p>
+            <input type= "radio" id="posted" name="contact" value="Posted: £3.99">
+            <label for="posted">Posted: £3.99</label>
+        </p>
+        
+        
+        </fieldset>
+        <p>
+            <button type="submit" id="book"
+                    name="book">Book Tickets</button>
+        </p>
+        
+        <p>
+            <button type="submit" id="homepage"
+                    name="homepage">Home Page</button>
+        </p>
+        <p id="output">
+
+        </p>
+        <p id ="output1">
+
+        </p>
+        <p id ="output2">
+            
+        </p>
+
+    </form>
+    <p>
+        <script src="main.js"></script>
+    </p>
+
+    </body>
+    </html>
